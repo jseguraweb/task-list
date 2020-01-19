@@ -1,0 +1,35 @@
+// typography
+
+$main-typo: 'Quicksand', sans-serif;
+$small: 0.8rem;
+$normal: 1rem;
+$big: 1.2rem;
+
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+}
+
+
+// colors
+
+$blue: rgba(109, 141, 170, 0.753);
+$white: #fff;
+$button: #ff9000;
+$button-hover: #ff9100d0;
+
+// layout
+
+$card-width: 900px;
+$main-radius: 5px;
+
+@mixin heading {
+    margin: 1rem 0;
+    font-size: $big;
+    font-weight: 600;
+}

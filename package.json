@@ -1,0 +1,26 @@
+{
+  "name": "task-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "dart-sass --watch scss/main.scss style.css --style compressed",
+    "prefix": "postcss *.css --use autoprefixer -d build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jseguraweb/task-list.git"
+  },
+  "author": "Jaime Segura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jseguraweb/task-list/issues"
+  },
+  "homepage": "https://github.com/jseguraweb/task-list#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "dart-sass": "^1.25.0",
+    "postcss-cli": "^7.1.0"
+  }
+}

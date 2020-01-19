@@ -5,35 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM manipulation</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Task List</title>
+    <link rel="stylesheet" href="third-party/reset.css">
+    <link rel="stylesheet" href="third-party/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="build/style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b1c25c50a2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <main>
-        <section class="wrapper">
+    <main id="card">
+        <section class="insert-task wrapper">
             <h2>Task List</h2>
-            <form class="wrapper" action="" id="task-form">
-                <input type="text" name="new-task" placeholder="add a new task here" id="new-task">
-                <input type="submit" value="ADD TASK" class="button white">
+            <form class="wrapper" action="#" id="task-form">
+                <input type="text" name="new-task" placeholder="add a new task here" id="new-task" action="index.php">
+                <input type="submit" value="ADD TASK" id="submit-button" class="button">
             </form>
         </section>
-        <section class="wrapper bk-blue white">
+        <section class="task-list wrapper">
             <h2>Tasks</h2>
-            <ul>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
+            <ul id="list">
+                <li class="item">List Item One<a href="#" class="delete-item"><i class="fas fa-trash-alt"></i></a>
+                </li>
+                <li class="item">List Item Two
+                    <a href="#" class="delete-item-icon">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </li>
             </ul>
-            <button class="button white">CLEAR ALL</button>
+            <input type="submit" value="CLEAR ALL" id="clear-button" class="button">
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
