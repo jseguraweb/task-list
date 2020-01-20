@@ -13,8 +13,12 @@
 
 // headings
 
+h1 {
+    @include big-heading();
+}
+
 h2 {
-    @include heading();
+    @include small-heading();
 }
     
 
@@ -63,7 +67,7 @@ body {
 
 #new-task::placeholder {
     font-size: $big;
-    color: #000;
+    color: rgb(124, 124, 124);
 }
 
 .task-list {

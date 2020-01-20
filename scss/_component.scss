@@ -10,6 +10,11 @@
     width: 100%;
     font-weight: 600;
     cursor: pointer;
+
+    &[value] {
+        color: $white;
+        font-size: $big;
+    }
     
     &:hover {
         background-color: $button-hover;
