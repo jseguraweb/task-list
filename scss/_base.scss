@@ -36,6 +36,7 @@ body {
 }
 
 #card {
+    width: 100%;
     max-width: $card-width;
     height: auto;
     border-radius: $main-radius;
@@ -48,9 +49,14 @@ body {
     justify-content: space-evenly;
 }
 
-.insert-task,
-.task-list {
+.insert-task {
     padding: 1rem;
+}
+
+.task-list {
+    padding: 1rem 1rem 2rem;
+    border-bottom-left-radius: $main-radius;
+    border-bottom-right-radius: $main-radius;
 }
 
 .button {
