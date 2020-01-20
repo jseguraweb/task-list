@@ -14,7 +14,7 @@ addNewTask.addEventListener('click', (e) => {
     newItem.innerText = newTask.value;
     const newLink = document.createElement('a');
     newLink.setAttribute('href', '#');
-    newLink.className = 'delete-item-icon';
+    newLink.className = 'delete-item';
     const trash = document.createElement('i');
     trash.className = 'fas fa-trash-alt';
     newLink.appendChild(trash);
@@ -28,11 +28,14 @@ addNewTask.addEventListener('click', (e) => {
 
 // clear ONE task
 
-let trashIcon = document.querySelectorAll('.fa-trash-alt');
+list.addEventListener('click', (e) => {
+    if (e.target.classList.contains('fa-trash-alt')){
+        if (confirm('Do you want to delete this task?')){
+            e.target.parentElement.parentElement.remove();
+        }
+    }
+});
 
-trashIcon.forEach(el => el.addEventListener('click', () => {
-    el.parentElement.parentElement.remove();
-}));
 
 // clear ALL tasks
 
