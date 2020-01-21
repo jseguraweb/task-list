@@ -20,12 +20,16 @@
         <section class="insert-task wrapper">
             <h1>Task List</h1>
             <form class="wrapper" action="#" id="task-form">
-                <input type="text" name="new-task" placeholder="add a new task here" id="new-task" action="index.php">
+                <input type="text" name="new-task" placeholder="add a new task here" id="new-task" class="input-field"
+                    action="index.php">
                 <input type="submit" value="ADD TASK" id="add-button" class="button">
             </form>
         </section>
         <section class="task-list wrapper">
             <h2>Tasks</h2>
+            <div class="wrapper">
+                <input type="text" name="filter" id="filter" class="input-field" placeholder="filter tasks">
+            </div>
             <ul id="list">
             </ul>
             <input type="submit" value="CLEAR ALL" id="clear-button" class="button">

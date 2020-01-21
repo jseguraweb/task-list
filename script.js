@@ -21,8 +21,28 @@ addNewTask.addEventListener('click', (e) => {
     newItem.appendChild(newLink)
     list.appendChild(newItem);
     }
+    
     newTask.value = '';
     e.preventDefault();
+});
+
+
+// filter tasks
+
+const filterInput = document.querySelector('#filter');
+
+filterInput.addEventListener('keyup', (e) => {
+    const text = e.target.value.toLocaleLowerCase();
+    const totalItems = document.querySelectorAll('.item');
+
+    totalItems.forEach(el => {
+        const itemInList = el.innerText;
+        if (itemInList.toLocaleLowerCase().indexOf(text) != -1 ){
+            el.style.display = 'inherit';
+        } else {
+            el.style.display = 'none';
+        }
+    })
 });
 
 
@@ -47,5 +67,5 @@ clearAll.addEventListener('click', () => {
             list.firstChild.remove();
         }
     };
+    filterInput.value = '';
 });
-

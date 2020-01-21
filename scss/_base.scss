@@ -63,7 +63,7 @@ body {
     @include button();
 }
 
-#new-task {
+.input-field {
     border: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.6);
     height: 2rem;
@@ -71,7 +71,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-#new-task::placeholder {
+.input-field::placeholder {
     font-size: $big;
     color: rgb(124, 124, 124);
 }
@@ -97,3 +97,6 @@ body {
     }
 }
 
+#filter {
+    margin-bottom: 1rem;
+}
